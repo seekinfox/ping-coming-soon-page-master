@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+html .container,
+body .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  color: #151f29;
+}
+html .container .intro,
+body .container .intro {
+  grid-column: 2/-2;
+}
+html .container .intro h1,
+body .container .intro h1 {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (min-width: 1000px) {
+  html .container .intro h1,
+body .container .intro h1 {
+    font-size: 2.2rem;
+  }
+}
+html .container .intro h1 span,
+body .container .intro h1 span {
+  color: #4f7df3;
+}
+html .container .intro h2,
+body .container .intro h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1000px) {
+  html .container .intro h2,
+body .container .intro h2 {
+    font-size: 2.2rem;
+  }
+}
+html .container .intro h2 span,
+body .container .intro h2 span {
+  font-weight: 500;
+  color: #969696;
+}
+html .container .intro p,
+body .container .intro p {
+  font-size: 13px;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 1000px) {
+  html .container .intro p,
+body .container .intro p {
+    font-size: 16px;
+  }
+}
+html .container .email,
+body .container .email {
+  grid-column: 2/-2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding: 0 1rem;
+}
+@media (min-width: 1000px) {
+  html .container .email,
+body .container .email {
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: 3rem 3rem;
+  }
+}
+html .container .email input,
+body .container .email input {
+  max-width: 30rem;
+  width: 100%;
+  display: flex;
+  border-radius: 2rem;
+  padding: 0.7rem 0;
+}
+html .container .email input:first-child,
+body .container .email input:first-child {
+  background: white;
+  padding-left: 2rem;
+  outline: 1px solid #c2d3ff;
+  margin-bottom: 0.7rem;
+}
+@media (min-width: 1000px) {
+  html .container .email input:first-child,
+body .container .email input:first-child {
+    grid-column: 6/-8;
+  }
+}
+html .container .email input:first-child:focus,
+body .container .email input:first-child:focus {
+  outline: 1px solid #c2d3ff;
+}
+html .container .email #warning,
+body .container .email #warning {
+  padding: 0;
+  margin: 0;
+  color: #ff5263;
+  font-size: 12px;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+@media (min-width: 1000px) {
+  html .container .email #warning,
+body .container .email #warning {
+    margin-top: -1.4rem;
+    margin-left: 1rem;
+    grid-column: 6/-8;
+    grid-row: 2/-1;
+    text-align: left;
+  }
+}
+html .container .email input:last-child,
+body .container .email input:last-child {
+  background: #4f7df3;
+  color: white;
+  font-weight: 700;
+  box-shadow: 1px 5px 10px #c2d3ff;
+  cursor: pointer;
+}
+@media (min-width: 1000px) {
+  html .container .email input:last-child,
+body .container .email input:last-child {
+    margin-bottom: 0.7rem;
+    margin-left: 1rem;
+    grid-column: -8/-6;
+  }
+}
+html .container .email input:last-child:hover,
+body .container .email input:last-child:hover {
+  outline: 5px solid;
+  box-shadow: 1px 5px 10px #2965ff;
+}
+html .container .hero,
+body .container .hero {
+  grid-column: 2/-2;
+  margin-bottom: 5rem;
+}
+html .container .hero img,
+body .container .hero img {
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  html .container .hero img,
+body .container .hero img {
+    max-width: 30rem;
+    margin-top: -3rem;
+  }
+}
+html .container .links,
+body .container .links {
+  grid-column: 2/-2;
+  color: #969696;
+  font-size: 10px;
+  margin-bottom: 2rem;
+}
+html .container .links .icon,
+body .container .links .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html .container .links .icon > i,
+body .container .links .icon > i {
+  width: 1rem;
+  height: 1rem;
+  color: #4f7df3;
+  padding: 0.8rem;
+  border-radius: 50%;
+  outline: 1px solid #c2d3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin: 1rem 1rem 1.5rem 0;
+  cursor: pointer;
+}
+html .container .links .icon > i:hover,
+body .container .links .icon > i:hover {
+  color: white;
+  background: #4f7df3;
+  outline: none;
+}
+
+::placeholder {
+  color: #c2d3ff;
+}
+
+/*# sourceMappingURL=style.css.map */

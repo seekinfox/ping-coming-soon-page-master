@@ -1,0 +1,207 @@
+//colors
+
+$Blue: hsl(223, 87%, 63%);
+$Pale-Blue: hsl(223, 100%, 88%);
+$Light-Red: hsl(354, 100%, 66%);
+$Gray: hsl(0, 0%, 59%);
+$Very-Dark-Blue: hsl(209, 33%, 12%);
+// font family
+
+$font: 'Libre Franklin',
+sans-serif;
+//reset
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+@mixin large {
+    @media (min-width:1000px){ @content }
+}
+
+html,
+body {
+    text-align: center;
+    font-family: $font;
+
+    //using flexbox would be much easier for me but grid is for practice
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        color: $Very-Dark-Blue;
+
+        .intro {
+            grid-column: 2/-2;
+
+            h1 {
+                margin-top: 5rem;
+                margin-bottom: 2rem;
+                font-size: 1.3rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                
+                @include large {
+                    font-size: 2.2rem;    
+                }
+                
+                span {
+                    color: $Blue;
+                }
+            }
+
+            h2 {
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                
+                @include large {
+                    font-size: 2.2rem;
+                }
+                
+                span {
+                    font-weight: 500;
+                    color: $Gray;
+                }
+            }
+
+            p {
+                font-size: 13px;
+                margin-bottom: 1.5rem;
+                @include large {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .email {
+            grid-column: 2/-2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5rem;
+            padding: 0 1rem;
+            
+            @include large {
+                display: grid;
+                grid-template-columns: repeat(17, 1fr);
+                grid-template-rows: 3rem 3rem;
+            }
+            
+            input {
+                max-width: 30rem;
+                width: 100%;
+                display: flex;
+                border-radius: 2rem;
+                padding: 0.7rem 0;
+            }
+
+            input:first-child {
+                background: white;
+                padding-left: 2rem;
+                outline: 1px solid $Pale-Blue;
+                margin-bottom: 0.7rem;
+                @include large {
+                    grid-column: 6/-8;
+                }
+            }
+
+            input:first-child:focus {
+                outline: 1px solid $Pale-Blue;
+            }
+
+            #warning {
+
+                padding: 0;
+                margin: 0;
+                color: $Light-Red;
+                font-size: 12px;
+                margin-bottom: 1rem;
+                font-style: italic;
+                @include large {
+                    margin-top: -1.4rem;
+                    margin-left: 1rem;
+                    grid-column: 6/-8;
+                    grid-row: 2/-1;
+                    text-align: left;
+                }
+            }
+
+            input:last-child {
+                background: $Blue;
+                color: white;
+                font-weight: 700;
+                box-shadow: 1px 5px 10px $Pale-Blue;
+                cursor: pointer;
+                @include large {
+                    margin-bottom: 0.7rem;
+                    margin-left: 1rem;
+                    grid-column: -8/-6;
+                }
+            }
+            input:last-child:hover {
+                outline: 5px solid;
+                box-shadow: 1px 5px 10px hsl(223, 100%, 58%);
+            }
+
+
+        }
+
+        .hero {
+            grid-column: 2/-2;
+            margin-bottom: 5rem;
+
+            img {
+
+                width: 100%;
+                @include large {
+                    max-width: 30rem;
+                    margin-top: -3rem;
+                }
+            }
+
+        }
+
+        .links {
+            grid-column: 2/-2;
+            color: $Gray;
+            font-size: 10px;
+            margin-bottom: 2rem;
+
+            .icon {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                > i {
+                    width: 1rem;
+                    height: 1rem;
+                    color: $Blue;
+                    padding: 0.8rem;
+                    border-radius: 50%;
+                    outline: 1px solid $Pale-Blue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                    margin: 1rem 1rem 1.5rem 0;
+                    cursor: pointer;
+                }
+
+                > i:hover {
+                    color: white;
+                    background: $Blue;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+::placeholder {
+    color: $Pale-Blue;
+}
+
+
