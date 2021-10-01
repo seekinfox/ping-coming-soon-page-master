@@ -28,25 +28,26 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![https://raw.githubusercontent.com/seekinfox/ping-coming-soon-page-master/main/Screenshot_2021-10-01%20Frontend%20Mentor%20Ping%20coming%20soon%20page(1).png](https://raw.githubusercontent.com/seekinfox/ping-coming-soon-page-master/main/Screenshot_2021-10-01%20Frontend%20Mentor%20Ping%20coming%20soon%20page(1).png)
 
-![](./screenshot.jpg)
+![https://raw.githubusercontent.com/seekinfox/ping-coming-soon-page-master/main/Screenshot_2021-10-01%20Frontend%20Mentor%20Ping%20coming%20soon%20page.png](https://raw.githubusercontent.com/seekinfox/ping-coming-soon-page-master/main/Screenshot_2021-10-01%20Frontend%20Mentor%20Ping%20coming%20soon%20page.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/seekinfox/ping-coming-soon-page-master](https://github.com/seekinfox/ping-coming-soon-page-master)
+- Live Site URL: [https://seekinfox.github.io/ping-coming-soon-page-master/](https://seekinfox.github.io/ping-coming-soon-page-master/)
 
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS
+- SASS/SCSS
 - Flexbox
 - CSS Grid
+- javaScript, DOM
 - Mobile-first workflow
-this project in the future.**
 
 ## Author
 
