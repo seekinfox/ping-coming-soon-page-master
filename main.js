@@ -8,7 +8,7 @@ function verify() {
         text = "Please provide a valid email address";
         document.getElementById("email").style.outline = "1px solid red";
     } else {
-        document.getElementById("email").style.outline = "1px solid $Pale-Blue";
+        document.getElementById("email").style.outline = "1px solid skyblue";
         document.getElementById("warning").style.display = "none";
         
     }
